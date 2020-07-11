@@ -6,7 +6,7 @@
 using namespace std;
 
 GaussianTracker::GaussianTracker(){
-    state = Inactive; //changed to free 
+    state = Inactive; 
     eventCount = 0;
     resetTime = 0;
     avgFlowX = 0.0;
