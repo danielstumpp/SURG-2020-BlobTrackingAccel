@@ -5,8 +5,8 @@
 #include <vector>
 #include <stdio.h>
 
-#define POOL_SIZE 8
-#define TRAJ_ROWS 10
+#define POOL_SIZE 20
+#define TRAJ_ROWS POOL_SIZE
 #define TRAJ_COLS 1000
 
 //Individual cell of the sensor's view that tracks its own
