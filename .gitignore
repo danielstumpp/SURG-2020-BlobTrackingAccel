@@ -1,0 +1,4 @@
+*.o
+makefile
+*.avi
+./Trials/*
