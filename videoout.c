@@ -1,4 +1,5 @@
 #include "videoout.h"
+#include "TrackerPool.h"
 #include <iostream>
 using namespace cv;
 using namespace std;
@@ -21,12 +22,12 @@ void drawBlobTracker(Mat &frame, double cen_x, double cen_y, double size_x, doub
 	ellipse(frame,Point(cen_x,cen_y), Size(size_x,size_y), angle, 0, 360, Scalar(255,255,0), 1, 8 );
 }
 
-void drawTrajectory(Mat &frame, vector<int> xpts, vector<int> ypts)
+void drawTrajectory(Mat &frame, traj xpts, traj ypts, int tracker)
 {
 	vector<Point> contour;
-	if (xpts.size() == 0) return;
-	for(int i =0;i<xpts.size();i++)
-		contour.push_back(Point(xpts[i],ypts[i]));
+	if (xpts.size(tracker) == 0) return;
+	for(int i =0;i<xpts.size(i);i++)
+		contour.push_back(Point(xpts.vect[tracker][i],ypts.vect[tracker][i]));
 	const Point *pts = (const Point*) Mat(contour).data;
 	int npts = Mat(contour).rows;
 	polylines(frame,&pts,&npts,1,false,Scalar(0,255,255));

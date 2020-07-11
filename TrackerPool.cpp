@@ -38,8 +38,8 @@ TrackerPool::TrackerPool() {
     std::vector<int> xVect;
     std::vector<int> yVect;
 
-    trajXPts.push_back(xVect);
-    trajYPts.push_back(yVect);
+    //trajXPts.push_back(xVect);
+    //trajYPts.push_back(yVect);
   }
 
   // push empty trackers onto
@@ -47,8 +47,12 @@ TrackerPool::TrackerPool() {
 }
 
 TrackerPool::~TrackerPool(){
+  /*** Don't need a destructor becase members are
+   *  staticly allocated at compile time */
   //trackerPool.clear();
   //trackerPool.shrink_to_fit();
+
+  /*
   for (int i = 0;i< trajXPts.size();i++){
     trajXPts[i].clear();
     trajXPts[i].shrink_to_fit();
@@ -59,6 +63,7 @@ TrackerPool::~TrackerPool(){
   trajXPts.shrink_to_fit();
   trajYPts.clear();
   trajYPts.shrink_to_fit();
+  */
 }
 
 int TrackerPool::getTracker(){
@@ -232,7 +237,7 @@ int TrackerPool::update(int eventX, int eventY, unsigned long int eventTime, int
           trackerPool[i].sumFlowY = 0;
           trackerPool[i].eventCount = 0;
           //std::cout<<trajXPts[i].size()<<"  "<<i<<std::endl;
-          removePts(trajXPts[i].size(),i);
+          removePts(trajXPts.size(i),i);
 
         }
     }
@@ -271,7 +276,7 @@ void TrackerPool::incrementEvents(unsigned long int eventTime)
           trackerPool[i].sumFlowX = 0;
           trackerPool[i].sumFlowY = 0;
           trackerPool[i].eventCount = 0;
-          removePts(trajXPts[i].size(),i);
+          removePts(trajXPts.size(i),i);
         }
       
     }//*/
@@ -319,17 +324,17 @@ void TrackerPool::bezier(int x0,int x3,int y0,int y3,float a, float theta,int cu
         yout += 3*y1*(1-t)*(1-t)*t;
         yout += 3*y2*(1-t)*t*t;
         yout += y3*t*t*t;
-        trajXPts[currTracker].push_back((int)xout+0.5);
-        trajYPts[currTracker].push_back((int)yout+0.5);
+        trajXPts.push_back(currTracker, (int)xout+0.5);
+        trajYPts.push_back(currTracker, (int)yout+0.5);
     }
 }
 
 void TrackerPool::removePts(int numPts,int trackerID){
   // removed outer for loop
   //for (int i =0; i < numPts;i++){
-    if (trajXPts[trackerID].size()>0){
-      trajXPts[trackerID].erase(trajXPts[trackerID].begin(),trajXPts[trackerID].begin() + numPts);
-      trajYPts[trackerID].erase(trajYPts[trackerID].begin(), trajYPts[trackerID].begin() + numPts);
+    if (trajXPts.size(trackerID)>0){
+      trajXPts.erase(trackerID,numPts);
+      trajYPts.erase(trackerID,numPts);
     }
 }
 

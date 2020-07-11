@@ -37,13 +37,13 @@ void drawTrackers(TrackerPool tracker_pool,Mat &frame,int time,int frameWidth, i
 
       	//Fit Bezier curve, then draw
         tracker_pool.bezier(tracker_pool.trackerPool[i].prevX,tracker_pool.trackerPool[i].predX,tracker_pool.trackerPool[i].prevY,tracker_pool.trackerPool[i].predY,0.1,M_PI/8,i);
-        drawTrajectory(frame,tracker_pool.trajXPts[i],tracker_pool.trajYPts[i]);
+        drawTrajectory(frame,tracker_pool.trajXPts,tracker_pool.trajYPts,i);
         tracker_pool.removePts(3,i);
         free(collisions);
         //printf("it's active\n");
       }
       else
-        tracker_pool.removePts(tracker_pool.trajXPts[i].size(),i);
+        tracker_pool.removePts(tracker_pool.trajXPts.size(i),i);
     }
 }
 
