@@ -1,0 +1,18 @@
+**Compile using makefile
+
+Command Line Run Command + Parameters:
+./blobTracking.o (Input File) (Filter Threshold) (# of Blobs) (Blob Activation Threshold) (Starting Blob Size) (Shape Update) (Position Update) (Smoothing Factor) (Integration Time) 
+
+Parameter Descriptions:
+Input File = Path to event stream text file; events should be in x y t p format
+Filter Threshold = Minimum event activity required in a cell to be considered for tracking algorithm
+# of Blobs = Number of trackers to instantiate (-1 -> unlimited)
+Blob Activation Threshold = Number of events required for a tracker to be considered active
+Starting Blob Size = initial sigmaX/sigmaY values for deterimining size of tracker axes
+Shape Update = weighted update used to adjust tracker shape over time
+Position Update = weighted update used to adjust tracker position over time
+Smoothing Factor = double exponential smoothing weight used to smooth tracker positions over time
+Integration Time = time in milliseconds to consider as a single frame output
+
+Example Run Command with Suggested Parameter Values:
+./blobTracking.o Trials/collisions1.txt 3.5 8 750 25 0.00025 0.1 0.0005 2
