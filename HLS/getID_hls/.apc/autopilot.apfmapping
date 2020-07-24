@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="GaussianTracker.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\src\GaussianTracker.cpp"/>
-    <originFiles name="GaussianTracker.h" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\include\GaussianTracker.h"/>
-    <originFiles name="TrackerPool.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\src\TrackerPool.cpp"/>
-    <originFiles name="TrackerPool.h" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\include\TrackerPool.h"/>
     <originFiles name="hw_functions.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\HLS\getID_hls\hw_functions.cpp"/>
+    <originFiles name="TrackerPool.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\HLS\getID_hls\TrackerPool.cpp"/>
+    <originFiles name="GaussianTracker.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\HLS\getID_hls\GaussianTracker.cpp"/>
   </source>
   <testbench>
     <originFiles name="getID_tb.cpp" path="C:\Users\dstum\Desktop\SURG-2020\SURG-2020-BlobTrackingAccel\HLS\getID_hls\getID_tb.cpp"/>

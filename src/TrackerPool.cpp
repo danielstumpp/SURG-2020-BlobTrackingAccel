@@ -1,4 +1,4 @@
-#include "TrackerPool.h"
+#include "../include/TrackerPool.h"
 #include <stdio.h>
 #include <math.h>
 #include <iostream>
@@ -28,43 +28,8 @@ TrackerPool::TrackerPool() {
   lastDecayTime = -1;
   decayThreshold = 250;
   numEvents = 0;
-
-  // create and add trackers to the pool
-  for (int i = 0; i < POOL_SIZE; i++)
-  {
-    //GaussianTracker trkr;
-    //trackerPool[i] = trkr;
-
-    std::vector<int> xVect;
-    std::vector<int> yVect;
-
-    //trajXPts.push_back(xVect);
-    //trajYPts.push_back(yVect);
-  }
-
-  // push empty trackers onto
-
 }
 
-TrackerPool::~TrackerPool(){
-  /*** Don't need a destructor becase members are
-   *  staticly allocated at compile time */
-  //trackerPool.clear();
-  //trackerPool.shrink_to_fit();
-
-  /*
-  for (int i = 0;i< trajXPts.size();i++){
-    trajXPts[i].clear();
-    trajXPts[i].shrink_to_fit();
-    trajYPts[i].clear();
-    trajYPts[i].shrink_to_fit();
-  }
-  trajXPts.clear();
-  trajXPts.shrink_to_fit();
-  trajYPts.clear();
-  trajYPts.shrink_to_fit();
-  */
-}
 
 int TrackerPool::getTracker(){
   //Assign an available free tracker
@@ -76,21 +41,7 @@ int TrackerPool::getTracker(){
         return i;
     }
   }
-
-  return -1;
-
-  /* This isnt needed because if none are free than there aren't any availible
-  //Create a new tracker if none available (-1 indicates no limit to # of trackers)
-  if (POOL_SIZE < numClusters || numClusters < 0){
-    GaussianTracker* curr = new GaussianTracker();
-    curr->setParameters(shapeFactor,smoothingFactor,posFactor, velFactor,sigmaX,sigmaY,sigmaXY);
-    trackerPool.push_back(curr);
-    trajXPts.push_back(vector<int> ());
-    trajYPts.push_back(vector<int> ());
-
-    return trackerPool.size() - 1;
-  } */
-  
+  return -1;  
 }
 
 //Apply repulsion between trackers within a certain distance of one another
@@ -181,21 +132,11 @@ int TrackerPool::update(int eventX, int eventY, unsigned long int eventTime, int
     //Reset decay timer
     if(lastDecayTime < 0) lastDecayTime = eventTime;
 
-
-    //**********************************************//
-    // Inputs: trackerPool, eventX, eventY, newFlow[2],
-    //**********************************************
-    
+    // will be accelerated
     int trackerID = getTrackerID(trackerPool, eventX, eventY, newFlow, maxProb);
-    //fprintf(stderr,"%lf\n",maxProb);
-    //**********************************
-    // Ouptuts: trackerID,
-    //**********************************
-
-  
 
     bool updated = false;
-    //std::cout<<trackerID<<std::endl;
+
     //Get a new tracker if no active trackers are close enough
     if(trackerID == -1) {
         trackerID = getTracker();
@@ -213,7 +154,7 @@ int TrackerPool::update(int eventX, int eventY, unsigned long int eventTime, int
       }
     //*/
     
-    //Apply repulsion effect between adjacent trackersa
+    //Apply repulsion effect between adjacent trackers
     repulse(frameWidth,frameHeight);
     
     //Apply decay rate if events have reached threshold
@@ -236,18 +177,11 @@ int TrackerPool::update(int eventX, int eventY, unsigned long int eventTime, int
           trackerPool[i].sumFlowX = 0;
           trackerPool[i].sumFlowY = 0;
           trackerPool[i].eventCount = 0;
-          //std::cout<<trajXPts[i].size()<<"  "<<i<<std::endl;
           removePts(trajXPts.size(i),i);
-
         }
     }
-
-    //*/
-
     return trackerID;
 }
-
-
 
 
 //Increment total event counter for tracking decay for filtered out events

@@ -5,14 +5,12 @@
 ############################################################
 open_project getID_hls
 set_top getTrackerID_hw
-add_files ../src/GaussianTracker.cpp
-add_files ../include/GaussianTracker.h
-add_files ../src/TrackerPool.cpp
-add_files ../include/TrackerPool.h
+add_files getID_hls/GaussianTracker.cpp
+add_files getID_hls/TrackerPool.cpp
 add_files getID_hls/hw_functions.cpp
-add_files -tb getID_hls/getID_tb.cpp
+add_files -tb getID_hls/getID_tb.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7z020clg484-1}
+set_part {xc7z020clg484-1} -tool vivado
 create_clock -period 10 -name default
 #source "./getID_hls/solution1/directives.tcl"
 csim_design

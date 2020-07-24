@@ -15,10 +15,8 @@ using namespace cv;
 
 void drawTrackers(TrackerPool tracker_pool,Mat &frame,int time,int frameWidth, int frameHeight)
 {
-    
     #pragma omp parallel for
     for (int i= 0; i< POOL_SIZE;i++){
-      //std::cout<<tracker_pool.trackerPool[i].isActive()<<"\t"<<tracker_pool.trackerPool[i].a<<"\t"<<tracker_pool.trackerPool[i].b<<std::endl;
       if(tracker_pool.trackerPool[i].isActive() && tracker_pool.trackerPool[i].a>0 && tracker_pool.trackerPool[i].b >0){
 
         (tracker_pool.trackerPool[i].a > tracker_pool.trackerPool[i].b) ? drawBlobTracker(frame,tracker_pool.trackerPool[i].predX,tracker_pool.trackerPool[i].predY,tracker_pool.trackerPool[i].a,tracker_pool.trackerPool[i].b,tracker_pool.trackerPool[i].alpha) : \
@@ -40,7 +38,6 @@ void drawTrackers(TrackerPool tracker_pool,Mat &frame,int time,int frameWidth, i
         drawTrajectory(frame,tracker_pool.trajXPts,tracker_pool.trajYPts,i);
         tracker_pool.removePts(3,i);
         free(collisions);
-        //printf("it's active\n");
       }
       else
         tracker_pool.removePts(tracker_pool.trajXPts.size(i),i);

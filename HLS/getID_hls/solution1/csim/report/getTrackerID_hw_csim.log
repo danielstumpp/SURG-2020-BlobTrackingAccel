@@ -1,12 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../getID_tb.cpp in debug mode
-csim.mk:74: recipe for target 'obj/getID_tb.o' failed
-In file included from ../../../getID_tb.cpp:2:0:
-../../../hw_functions.cpp:1:25: fatal error: TrackerPool.h: No such file or directory
- #include "TrackerPool.h"
-                         ^
-compilation terminated.
-make: *** [obj/getID_tb.o] Error 1
-ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+   Compiling ../../../GaussianTracker.cpp in debug mode
+   Generating csim.exe
+ID: 0	Prob: 0.0159155
+INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

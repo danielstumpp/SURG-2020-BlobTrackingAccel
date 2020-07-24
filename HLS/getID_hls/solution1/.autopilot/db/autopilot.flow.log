@@ -1,55 +1,70 @@
-INFO-FLOW: Workspace C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1 opened at Tue Jul 14 10:38:35 -0400 2020
+INFO-FLOW: Workspace C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1 opened at Thu Jul 23 19:41:48 -0500 2020
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.153 sec.
-Command     ap_source done; 0.153 sec.
-Execute     set_part xc7z020clg484-1 
-Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.636 sec.
-Execute       ap_part_info -name xc7z020clg484-1 -data info 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.116 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.174 sec.
+Command     ap_source done; 0.174 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 1.059 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
 Execute         ap_part_info -data single -name xc7z020-clg484-1 
 Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
 Execute         ap_part_info -name xc7z020-clg484-1 -data info 
@@ -60,368 +75,883 @@ Execute         config_chip_info -quiet -speed slow
 Execute       add_library xilinx/zynq/zynq_fpv6 
 Execute         get_default_platform 
 Execute         open_platform DefaultPlatform 
-Execute         import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute         import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 Execute       ap_part_info -name xc7z020-clg484-1 -data info 
 Execute       get_default_platform 
-Command     set_part done; 1.908 sec.
-Execute     ap_part_info -data single -name xc7z020clg484-1 
-Execute     ap_part_info -name xc7z020clg484-1 -data resources 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
+Command     set_part done; 1.192 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 2.213 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
+Command   open_solution done; 1.443 sec.
+Execute   set_part xc7z020clg484-1 -tool vivado 
+Execute     ap_part_info -name xc7z020clg484-1 -data single -quiet 
 Execute     ap_part_info -name xc7z020clg484-1 -data info 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.887 sec.
-Command ap_source done; error code: 1; 4.111 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1 opened at Tue Jul 14 10:40:06 -0400 2020
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.145 sec.
-Command     ap_source done; 0.146 sec.
-Execute     set_part xc7z020clg484-1 
-Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.548 sec.
-Execute       ap_part_info -name xc7z020clg484-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
-Execute         get_default_platform 
-Execute         ap_part_info -data single -name xc7z020-clg484-1 
-Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
 Execute       get_default_platform 
-Command     set_part done; 1.766 sec.
-Execute     ap_part_info -data single -name xc7z020clg484-1 
-Execute     ap_part_info -name xc7z020clg484-1 -data resources 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 2.035 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.255 sec.
-Command ap_source done; error code: 1; 3.301 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1 opened at Tue Jul 14 10:41:27 -0400 2020
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.124 sec.
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/hw_functions.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling getID_hls/hw_functions.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       is_encrypted getID_hls/hw_functions.cpp 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "getID_hls/hw_functions.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E getID_hls/hw_functions.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp
+Command       clang done; 1.293 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.251 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp"  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.287 sec.
+INFO-FLOW: Done: GCC PP time: 2.8 seconds per iteration
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.226 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.23 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.hw_functions.pp.0.cpp.diag.yml C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.hw_functions.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.hw_functions.pp.0.cpp.err.log 
+Command       ap_eval done; 0.175 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.hw_functions.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.hw_functions.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.hw_functions.pp.0.cpp.err.log 
+Command         ap_eval done; 0.42 sec.
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.hw_functions.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.hw_functions.pp.0.cpp.err.log 
+Command         ap_eval done; 0.201 sec.
+Command       tidy_31 done; 0.646 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.404 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.bc
+Command       clang done; 1.291 sec.
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/TrackerPool.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling getID_hls/TrackerPool.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       is_encrypted getID_hls/TrackerPool.cpp 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "getID_hls/TrackerPool.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E getID_hls/TrackerPool.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp
+Command       clang done; 1.403 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.287 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp"  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.39 sec.
+INFO-FLOW: Done: GCC PP time: 3.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.278 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.267 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.TrackerPool.pp.0.cpp.diag.yml C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.TrackerPool.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.TrackerPool.pp.0.cpp.err.log 
+Command       ap_eval done; 0.2 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.TrackerPool.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.TrackerPool.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.TrackerPool.pp.0.cpp.err.log 
+Command         ap_eval done; 0.381 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.TrackerPool.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.TrackerPool.pp.0.cpp.err.log 
+Command         ap_eval done; 0.266 sec.
+Command       tidy_31 done; 0.656 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.335 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.bc
+Command       clang done; 1.316 sec.
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/GaussianTracker.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling getID_hls/GaussianTracker.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       is_encrypted getID_hls/GaussianTracker.cpp 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "getID_hls/GaussianTracker.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E getID_hls/GaussianTracker.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp
+Command       clang done; 1.314 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.27 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp"  -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/useless.bc
+Command       clang done; 1.292 sec.
+INFO-FLOW: Done: GCC PP time: 2.9 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.268 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp std=gnu++98 -directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.27 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.GaussianTracker.pp.0.cpp.diag.yml C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.GaussianTracker.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-dataflow-lawyer.GaussianTracker.pp.0.cpp.err.log 
+Command       ap_eval done; 0.193 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.GaussianTracker.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.GaussianTracker.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/tidy-3.1.GaussianTracker.pp.0.cpp.err.log 
+Command         ap_eval done; 0.307 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.GaussianTracker.pp.0.cpp.out.log 2> C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/xilinx-legacy-rewriter.GaussianTracker.pp.0.cpp.err.log 
+Command         ap_eval done; 0.202 sec.
+Command       tidy_31 done; 0.517 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.267 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.bc
+Command       clang done; 1.308 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/hw_functions.g.bc C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/TrackerPool.g.bc C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianTracker.g.bc -hls-opt -except-internalize getTrackerID_hw -LC:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 3.445 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 185.188 ; gain = 93.469
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 185.188 ; gain = 93.469
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.pp.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.633 sec.
+Execute         llvm-ld C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 2.609 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top getTrackerID_hw -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.0.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 1.361 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 360.453 ; gain = 268.734
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.1.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'distance_hw' (getID_hls/hw_functions.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'fabs' into 'std::abs' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:94) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::abs' into 'GaussianP' (getID_hls/GaussianTracker.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'distance_hw' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:66) automatically.
+Command         transform done; 0.821 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.223 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 427.281 ; gain = 335.563
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.g.1.bc to C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.1.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getTrackerID_hw' (getID_hls/hw_functions.cpp:46).
+INFO: [HLS 200-489] Unrolling loop 'mainGTIDloop' (getID_hls/hw_functions.cpp:60) in function 'getTrackerID_hw' completely with a factor of 16.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'distance_hw' (getID_hls/hw_functions.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'fabs' into 'std::abs' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:94) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::abs' into 'GaussianP' (getID_hls/GaussianTracker.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'distance_hw' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:66) automatically.
+Command         transform done; 1.633 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (getID_hls/hw_functions.cpp:62:16) in function 'getTrackerID_hw'... converting 13 basic blocks.
+Command         transform done; 0.72 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:32 . Memory (MB): peak = 556.969 ; gain = 465.250
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.2.bc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function '__hls_fptosi_float_i32' to '__hls_fptosi_float_i' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:15:54)
+Command         transform done; 2.985 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 603.867 ; gain = 512.148
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 11.034 sec.
+Command     elaborate done; 32.897 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'getTrackerID_hw' ...
+Execute       ap_set_top_model getTrackerID_hw 
+WARNING: [SYN 201-103] Legalizing function name '__hls_fptosi_float_i' to 'p_hls_fptosi_float_i'.
+Execute       get_model_list getTrackerID_hw -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model getTrackerID_hw 
+Execute       preproc_iomode -model __hls_fptosi_float_i 
+Execute       preproc_iomode -model GaussianP 
+Execute       get_model_list getTrackerID_hw -filter all-wo-channel 
+INFO-FLOW: Model list for configure: GaussianP __hls_fptosi_float_i getTrackerID_hw
+INFO-FLOW: Configuring Module : GaussianP ...
+Execute       set_default_model GaussianP 
+Execute       apply_spec_resource_limit GaussianP 
+INFO-FLOW: Configuring Module : __hls_fptosi_float_i ...
+Execute       set_default_model __hls_fptosi_float_i 
+Execute       apply_spec_resource_limit __hls_fptosi_float_i 
+INFO-FLOW: Configuring Module : getTrackerID_hw ...
+Execute       set_default_model getTrackerID_hw 
+Execute       apply_spec_resource_limit getTrackerID_hw 
+INFO-FLOW: Model list for preprocess: GaussianP __hls_fptosi_float_i getTrackerID_hw
+INFO-FLOW: Preprocessing Module: GaussianP ...
+Execute       set_default_model GaussianP 
+Execute       cdfg_preprocess -model GaussianP 
+Execute       rtl_gen_preprocess GaussianP 
+INFO-FLOW: Preprocessing Module: __hls_fptosi_float_i ...
+Execute       set_default_model __hls_fptosi_float_i 
+Execute       cdfg_preprocess -model __hls_fptosi_float_i 
+Execute       rtl_gen_preprocess __hls_fptosi_float_i 
+INFO-FLOW: Preprocessing Module: getTrackerID_hw ...
+Execute       set_default_model getTrackerID_hw 
+Execute       cdfg_preprocess -model getTrackerID_hw 
+Execute       rtl_gen_preprocess getTrackerID_hw 
+INFO-FLOW: Model list for synthesis: GaussianP __hls_fptosi_float_i getTrackerID_hw
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GaussianP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model GaussianP 
+Execute       schedule -model GaussianP 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'GaussianP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 5, Final II = 5, Depth = 116.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.193 sec.
+INFO: [HLS 200-111]  Elapsed time: 35.591 seconds; current allocated memory: 531.653 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.verbose.sched.rpt 
+Command       syn_report done; 0.169 sec.
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.sched.adb -f 
+INFO-FLOW: Finish scheduling GaussianP.
+Execute       set_default_model GaussianP 
+Execute       bind -model GaussianP 
+BIND OPTION: model=GaussianP
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.368 seconds; current allocated memory: 532.263 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.verbose.bind.rpt 
+Command       syn_report done; 0.223 sec.
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.bind.adb -f 
+INFO-FLOW: Finish binding GaussianP.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_hls_fptosi_float_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model __hls_fptosi_float_i 
+Execute       schedule -model __hls_fptosi_float_i 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function '__hls_fptosi_float_i'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.426 seconds; current allocated memory: 532.399 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.verbose.sched.rpt 
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.sched.adb -f 
+INFO-FLOW: Finish scheduling __hls_fptosi_float_i.
+Execute       set_default_model __hls_fptosi_float_i 
+Execute       bind -model __hls_fptosi_float_i 
+BIND OPTION: model=__hls_fptosi_float_i
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.201 seconds; current allocated memory: 532.503 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.verbose.bind.rpt 
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.bind.adb -f 
+INFO-FLOW: Finish binding __hls_fptosi_float_i.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getTrackerID_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model getTrackerID_hw 
+Execute       schedule -model getTrackerID_hw 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getTrackerID_hw'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 100, Final II = 100, Depth = 572.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 7.51 sec.
+INFO: [HLS 200-111]  Elapsed time: 7.671 seconds; current allocated memory: 543.980 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.verbose.sched.rpt 
+Command       syn_report done; 2.704 sec.
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.sched.adb -f 
+Command       db_write done; 1.193 sec.
+INFO-FLOW: Finish scheduling getTrackerID_hw.
+Execute       set_default_model getTrackerID_hw 
+Execute       bind -model getTrackerID_hw 
+BIND OPTION: model=getTrackerID_hw
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] After resource sharing, estimated clock period (10.9974ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+INFO: [BIND 205-100] The critical path consists of the following:
+	'call' operation ('minDist_2', getID_hls/hw_functions.cpp:90) to '__hls_fptosi_float_i' (11 ns)
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 1.977 sec.
+INFO: [HLS 200-111]  Elapsed time: 6.014 seconds; current allocated memory: 565.156 MB.
+Execute       syn_report -verbosereport -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.verbose.bind.rpt 
+Command       syn_report done; 3.712 sec.
+Execute       db_write -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.bind.adb -f 
+Command       db_write done; 1.295 sec.
+INFO-FLOW: Finish binding getTrackerID_hw.
+Execute       get_model_list getTrackerID_hw -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess GaussianP 
+Execute       rtl_gen_preprocess __hls_fptosi_float_i 
+Execute       rtl_gen_preprocess getTrackerID_hw 
+INFO-FLOW: Model list for RTL generation: GaussianP __hls_fptosi_float_i getTrackerID_hw
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GaussianP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model GaussianP -vendor xilinx -mg_file C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'getTrackerID_hw_dbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dmul_64ns_64ns_64_6_max_dsp_1' to 'getTrackerID_hw_dcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_ddiv_64ns_64ns_64_31_1' to 'getTrackerID_hw_ddEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dcmp_64ns_64ns_1_2_1' to 'getTrackerID_hw_deOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_sitodp_32ns_64_6_1' to 'getTrackerID_hw_sfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dsqrt_64ns_64ns_64_31_1' to 'getTrackerID_hw_dg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dexp_64ns_64ns_64_18_full_dsp_1' to 'getTrackerID_hw_dhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dcud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_ddEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_deOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_sfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GaussianP'.
+INFO: [HLS 200-111]  Elapsed time: 5.266 seconds; current allocated memory: 567.415 MB.
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       gen_rtl GaussianP -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/systemc/GaussianP -synmodules GaussianP __hls_fptosi_float_i getTrackerID_hw 
+Execute       gen_rtl GaussianP -style xilinx -f -lang vhdl -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/vhdl/GaussianP 
+Execute       gen_rtl GaussianP -style xilinx -f -lang vlog -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/verilog/GaussianP 
+Execute       syn_report -csynth -model GaussianP -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/GaussianP_csynth.rpt 
+Execute       syn_report -rtlxml -model GaussianP -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/GaussianP_csynth.xml 
+Execute       syn_report -verbosereport -model GaussianP -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.verbose.rpt 
+Command       syn_report done; 0.506 sec.
+Execute       db_write -model GaussianP -f -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.adb 
+Command       db_write done; 0.126 sec.
+Execute       gen_tb_info GaussianP -p C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_hls_fptosi_float_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model __hls_fptosi_float_i -vendor xilinx -mg_file C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_hls_fptosi_float_i'.
+INFO: [HLS 200-111]  Elapsed time: 1.148 seconds; current allocated memory: 567.784 MB.
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       gen_rtl __hls_fptosi_float_i -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/systemc/p_hls_fptosi_float_i -synmodules GaussianP __hls_fptosi_float_i getTrackerID_hw 
+Execute       gen_rtl __hls_fptosi_float_i -style xilinx -f -lang vhdl -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/vhdl/p_hls_fptosi_float_i 
+Execute       gen_rtl __hls_fptosi_float_i -style xilinx -f -lang vlog -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/verilog/p_hls_fptosi_float_i 
+Execute       syn_report -csynth -model __hls_fptosi_float_i -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/p_hls_fptosi_float_i_csynth.rpt 
+Execute       syn_report -rtlxml -model __hls_fptosi_float_i -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/p_hls_fptosi_float_i_csynth.xml 
+Execute       syn_report -verbosereport -model __hls_fptosi_float_i -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.verbose.rpt 
+Execute       db_write -model __hls_fptosi_float_i -f -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.adb 
+Execute       gen_tb_info __hls_fptosi_float_i -p C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getTrackerID_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model getTrackerID_hw -vendor xilinx -mg_file C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_state' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_eventCount' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_resetTime' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_prevX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_prevY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_predX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_predY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_shapeFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_origShapeFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_posFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_velFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_clusterSize' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_smoothingFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp1x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp2x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp1y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp2y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaXY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_b' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_alpha' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sumFlowX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sumFlowY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_avgFlowX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_avgFlowY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_activity' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_lastTimeStamp' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/eventX' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/eventY' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/newFlow' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/maxProb' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'getTrackerID_hw' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'trackerPool_state', 'trackerPool_eventCount', 'trackerPool_resetTime', 'trackerPool_x', 'trackerPool_y', 'trackerPool_prevX', 'trackerPool_prevY', 'trackerPool_predX', 'trackerPool_predY', 'trackerPool_shapeFactor', 'trackerPool_origShapeFactor', 'trackerPool_posFactor', 'trackerPool_velFactor', 'trackerPool_clusterSize', 'trackerPool_smoothingFactor', 'trackerPool_sp1x', 'trackerPool_sp2x', 'trackerPool_sp1y', 'trackerPool_sp2y', 'trackerPool_sigmaX', 'trackerPool_sigmaY', 'trackerPool_sigmaXY', 'trackerPool_a', 'trackerPool_b', 'trackerPool_alpha', 'trackerPool_sumFlowX', 'trackerPool_sumFlowY', 'trackerPool_avgFlowX', 'trackerPool_avgFlowY', 'trackerPool_activity' and 'trackerPool_lastTimeStamp' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fadd_32ns_32ns_32_5_full_dsp_1' to 'getTrackerID_hw_fibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fmul_32ns_32ns_32_4_max_dsp_1' to 'getTrackerID_hw_fjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_sitofp_32ns_32_6_1' to 'getTrackerID_hw_skbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fptrunc_64ns_32_2_1' to 'getTrackerID_hw_flbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fpext_32ns_64_2_1' to 'getTrackerID_hw_fmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fcmp_32ns_32ns_1_2_1' to 'getTrackerID_hw_fncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fsqrt_32ns_32ns_32_12_1' to 'getTrackerID_hw_focq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dsub_64ns_64ns_64_5_full_dsp_1' to 'getTrackerID_hw_dpcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_deOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_flbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fmb6': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_focq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_sfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_skbM': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getTrackerID_hw'.
+Command       create_rtl_model done; 1.758 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.176 seconds; current allocated memory: 588.160 MB.
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       gen_rtl getTrackerID_hw -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/systemc/getTrackerID_hw -synmodules GaussianP __hls_fptosi_float_i getTrackerID_hw 
+Command       gen_rtl done; 0.175 sec.
+Execute       gen_rtl getTrackerID_hw -istop -style xilinx -f -lang vhdl -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/vhdl/getTrackerID_hw 
+Command       gen_rtl done; 1.208 sec.
+Execute       gen_rtl getTrackerID_hw -istop -style xilinx -f -lang vlog -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/verilog/getTrackerID_hw 
+Command       gen_rtl done; 0.491 sec.
+Execute       syn_report -csynth -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/getTrackerID_hw_csynth.rpt 
+Command       syn_report done; 0.45 sec.
+Execute       syn_report -rtlxml -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/syn/report/getTrackerID_hw_csynth.xml 
+Command       syn_report done; 0.454 sec.
+Execute       syn_report -verbosereport -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.verbose.rpt 
+Command       syn_report done; 3.976 sec.
+Execute       db_write -model getTrackerID_hw -f -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.adb 
+Command       db_write done; 2.53 sec.
+Execute       gen_tb_info getTrackerID_hw -p C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw 
+Execute       export_constraint_db -f -tool general -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.constraint.tcl 
+Execute       syn_report -designview -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.design.xml 
+Command       syn_report done; 1.25 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model getTrackerID_hw -o C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks getTrackerID_hw 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain getTrackerID_hw 
+INFO-FLOW: Model list for RTL component generation: GaussianP __hls_fptosi_float_i getTrackerID_hw
+INFO-FLOW: Handling components in module [GaussianP] ... 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+INFO-FLOW: Found component getTrackerID_hw_dbkb.
+INFO-FLOW: Append model getTrackerID_hw_dbkb
+INFO-FLOW: Found component getTrackerID_hw_dcud.
+INFO-FLOW: Append model getTrackerID_hw_dcud
+INFO-FLOW: Found component getTrackerID_hw_ddEe.
+INFO-FLOW: Append model getTrackerID_hw_ddEe
+INFO-FLOW: Found component getTrackerID_hw_deOg.
+INFO-FLOW: Append model getTrackerID_hw_deOg
+INFO-FLOW: Found component getTrackerID_hw_sfYi.
+INFO-FLOW: Append model getTrackerID_hw_sfYi
+INFO-FLOW: Found component getTrackerID_hw_dg8j.
+INFO-FLOW: Append model getTrackerID_hw_dg8j
+INFO-FLOW: Found component getTrackerID_hw_dhbi.
+INFO-FLOW: Append model getTrackerID_hw_dhbi
+INFO-FLOW: Handling components in module [p_hls_fptosi_float_i] ... 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+INFO-FLOW: Handling components in module [getTrackerID_hw] ... 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+INFO-FLOW: Found component getTrackerID_hw_fibs.
+INFO-FLOW: Append model getTrackerID_hw_fibs
+INFO-FLOW: Found component getTrackerID_hw_fjbC.
+INFO-FLOW: Append model getTrackerID_hw_fjbC
+INFO-FLOW: Found component getTrackerID_hw_skbM.
+INFO-FLOW: Append model getTrackerID_hw_skbM
+INFO-FLOW: Found component getTrackerID_hw_flbW.
+INFO-FLOW: Append model getTrackerID_hw_flbW
+INFO-FLOW: Found component getTrackerID_hw_fmb6.
+INFO-FLOW: Append model getTrackerID_hw_fmb6
+INFO-FLOW: Found component getTrackerID_hw_fncg.
+INFO-FLOW: Append model getTrackerID_hw_fncg
+INFO-FLOW: Found component getTrackerID_hw_focq.
+INFO-FLOW: Append model getTrackerID_hw_focq
+INFO-FLOW: Found component getTrackerID_hw_dpcA.
+INFO-FLOW: Append model getTrackerID_hw_dpcA
+INFO-FLOW: Found component getTrackerID_hw_AXILiteS_s_axi.
+INFO-FLOW: Append model getTrackerID_hw_AXILiteS_s_axi
+INFO-FLOW: Append model GaussianP
+INFO-FLOW: Append model p_hls_fptosi_float_i
+INFO-FLOW: Append model getTrackerID_hw
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: getTrackerID_hw_dbkb getTrackerID_hw_dcud getTrackerID_hw_ddEe getTrackerID_hw_deOg getTrackerID_hw_sfYi getTrackerID_hw_dg8j getTrackerID_hw_dhbi getTrackerID_hw_fibs getTrackerID_hw_fjbC getTrackerID_hw_skbM getTrackerID_hw_flbW getTrackerID_hw_fmb6 getTrackerID_hw_fncg getTrackerID_hw_focq getTrackerID_hw_dpcA getTrackerID_hw_AXILiteS_s_axi GaussianP p_hls_fptosi_float_i getTrackerID_hw
+INFO-FLOW: To file: write model getTrackerID_hw_dbkb
+INFO-FLOW: To file: write model getTrackerID_hw_dcud
+INFO-FLOW: To file: write model getTrackerID_hw_ddEe
+INFO-FLOW: To file: write model getTrackerID_hw_deOg
+INFO-FLOW: To file: write model getTrackerID_hw_sfYi
+INFO-FLOW: To file: write model getTrackerID_hw_dg8j
+INFO-FLOW: To file: write model getTrackerID_hw_dhbi
+INFO-FLOW: To file: write model getTrackerID_hw_fibs
+INFO-FLOW: To file: write model getTrackerID_hw_fjbC
+INFO-FLOW: To file: write model getTrackerID_hw_skbM
+INFO-FLOW: To file: write model getTrackerID_hw_flbW
+INFO-FLOW: To file: write model getTrackerID_hw_fmb6
+INFO-FLOW: To file: write model getTrackerID_hw_fncg
+INFO-FLOW: To file: write model getTrackerID_hw_focq
+INFO-FLOW: To file: write model getTrackerID_hw_dpcA
+INFO-FLOW: To file: write model getTrackerID_hw_AXILiteS_s_axi
+INFO-FLOW: To file: write model GaussianP
+INFO-FLOW: To file: write model p_hls_fptosi_float_i
+INFO-FLOW: To file: write model getTrackerID_hw
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.13 sec.
+Command       ap_source done; 0.13 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.421 sec.
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.598 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.148 sec.
 Command       ap_source done; 0.149 sec.
-Command     ap_source done; 0.149 sec.
-Execute     set_part xc7z020clg484-1 
-Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.57 sec.
-Execute       ap_part_info -name xc7z020clg484-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
-Execute         get_default_platform 
-Execute         ap_part_info -data single -name xc7z020-clg484-1 
-Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       get_default_platform 
-Command     set_part done; 1.788 sec.
-Execute     ap_part_info -data single -name xc7z020clg484-1 
-Execute     ap_part_info -name xc7z020clg484-1 -data resources 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 2.063 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.147 sec.
-Command ap_source done; error code: 1; 3.22 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1 opened at Tue Jul 14 10:42:08 -0400 2020
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.148 sec.
-Command     ap_source done; 0.148 sec.
-Execute     set_part xc7z020clg484-1 
-Execute       ap_part_info -name xc7z020clg484-1 -data single -quiet 
-Command       ap_part_info done; 1.56 sec.
-Execute       ap_part_info -name xc7z020clg484-1 -data info 
-Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
-Execute         get_default_platform 
-Execute         ap_part_info -data single -name xc7z020-clg484-1 
-Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute         ap_part_info -name xc7z020-clg484-1 -data info 
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-Execute         open_platform DefaultPlatform 
-Execute         import_lib C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
-Execute             source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
-Execute                 source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute               source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
-Execute         source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute           source C:/Xilinx/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
-INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-Execute       ap_part_info -name xc7z020-clg484-1 -data info 
-Execute       get_default_platform 
-Command     set_part done; 1.775 sec.
-Execute     ap_part_info -data single -name xc7z020clg484-1 
-Execute     ap_part_info -name xc7z020clg484-1 -data resources 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 2.063 sec.
-Execute   csim_design -quiet 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/getID_tb.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/GaussianTracker.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/GaussianTracker.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/src/TrackerPool.cpp 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/include/TrackerPool.h 
-Execute     is_encrypted C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     is_xip C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/hw_functions.cpp 
-Execute     ap_part_info -name xc7z020clg484-1 -data info 
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; error code: 2; 1.159 sec.
-Command ap_source done; error code: 1; 3.236 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=getTrackerID_hw xml_exists=0
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.21 sec.
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.244 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.compgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.constraint.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=12
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=36
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=19 #gSsdmPorts=12
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.dataonly.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.dataonly.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.compgen.dataonly.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.constraint.tcl 
+Execute       sc_get_clocks getTrackerID_hw 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dadddsub_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dcmp_0_no_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_ddiv_29_no_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dexp_16_full_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dmul_4_max_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dsqrt_29_no_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_dsub_3_full_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fcmp_0_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fptrunc_0_no_dsp_64_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_fsqrt_10_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_sitodp_4_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/impl/misc/getTrackerID_hw_ap_sitofp_4_no_dsp_32_ip.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/GaussianP.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/p_hls_fptosi_float_i.tbgen.tcl 
+Execute       source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/getTrackerID_hw.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:41 ; elapsed = 00:01:23 . Memory (MB): peak = 737.473 ; gain = 645.754
+INFO: [VHDL 208-304] Generating VHDL RTL for getTrackerID_hw.
+INFO: [VLOG 209-307] Generating Verilog RTL for getTrackerID_hw.
+Command     autosyn done; 47.591 sec.
+Command   csynth_design done; 80.511 sec.
+Command ap_source done; 82.123 sec.
 Execute cleanup_all 

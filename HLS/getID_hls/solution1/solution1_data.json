@@ -1,0 +1,1128 @@
+{
+  "Top": "getTrackerID_hw",
+  "RtlTop": "getTrackerID_hw",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "0",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg484",
+    "Speed": "-1"
+  },
+  "HlsSolution": {
+    
+  },
+  "Args": {
+    "trackerPool": {
+      "index": "0",
+      "type": {
+        "kinds": [
+          "struct",
+          "array"
+        ],
+        "dataType": "GaussianTracker",
+        "arraySizes": ["16"],
+        "structImpl": "flat-field",
+        "dataPack": true,
+        "fields": {
+          "state": {
+            "order": "0",
+            "dataType": "State",
+            "dataWidth": "2",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "1:0",
+            "memoryRef": "trackerPool_state",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "eventCount": {
+            "order": "1",
+            "dataType": "int",
+            "dataWidth": "32",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "31:0",
+            "memoryRef": "trackerPool_eventCount",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "resetTime": {
+            "order": "2",
+            "dataType": "long",
+            "dataWidth": "32",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "31:0",
+            "memoryRef": "trackerPool_resetTime",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "x": {
+            "order": "3",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_x",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "y": {
+            "order": "4",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_y",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "prevX": {
+            "order": "5",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_prevX",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "prevY": {
+            "order": "6",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_prevY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "predX": {
+            "order": "7",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_predX",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "predY": {
+            "order": "8",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_predY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "shapeFactor": {
+            "order": "9",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_shapeFactor",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "origShapeFactor": {
+            "order": "10",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_origShapeFactor",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "posFactor": {
+            "order": "11",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_posFactor",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "velFactor": {
+            "order": "12",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_velFactor",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "clusterSize": {
+            "order": "13",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_clusterSize",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "smoothingFactor": {
+            "order": "14",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_smoothingFactor",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sp1x": {
+            "order": "15",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sp1x",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sp2x": {
+            "order": "16",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sp2x",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sp1y": {
+            "order": "17",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sp1y",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sp2y": {
+            "order": "18",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sp2y",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sigmaX": {
+            "order": "19",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sigmaX",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sigmaY": {
+            "order": "20",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sigmaY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sigmaXY": {
+            "order": "21",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sigmaXY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "a": {
+            "order": "22",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_a",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "b": {
+            "order": "23",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_b",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "alpha": {
+            "order": "24",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_alpha",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sumFlowX": {
+            "order": "25",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sumFlowX",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "sumFlowY": {
+            "order": "26",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_sumFlowY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "avgFlowX": {
+            "order": "27",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_avgFlowX",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "avgFlowY": {
+            "order": "28",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_avgFlowY",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "activity": {
+            "order": "29",
+            "dataType": "double",
+            "dataWidth": "64",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "63:0",
+            "memoryRef": "trackerPool_activity",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "lastTimeStamp": {
+            "order": "30",
+            "dataType": "long",
+            "dataWidth": "32",
+            "interfaceRef": "s_axi_AXILiteS",
+            "bitMap": "31:0",
+            "memoryRef": "trackerPool_lastTimeStamp",
+            "structImpl": "field",
+            "dataPack": true
+          }
+        }
+      }
+    },
+    "eventX": {
+      "index": "1",
+      "type": {
+        "dataType": "int",
+        "dataWidth": "32",
+        "interfaceRef": "eventX"
+      }
+    },
+    "eventY": {
+      "index": "2",
+      "type": {
+        "dataType": "int",
+        "dataWidth": "32",
+        "interfaceRef": "eventY"
+      }
+    },
+    "newFlow": {
+      "index": "3",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "double",
+        "dataWidth": "64",
+        "arraySizes": ["2"],
+        "multiInterfaceRef": [
+          "newFlow_address0",
+          "newFlow_address1",
+          "newFlow_q0",
+          "newFlow_q1"
+        ]
+      }
+    },
+    "maxProb": {
+      "index": "4",
+      "type": {
+        "dataType": "double",
+        "dataWidth": "64",
+        "interfaceRef": "maxProb"
+      }
+    }
+  },
+  "Return": {
+    "dataType": "int",
+    "dataWidth": "32",
+    "interfaceRef": "ap_return"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "100",
+    "Latency": "571",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "getTrackerID_hw",
+    "Version": "1.0",
+    "DisplayName": "Gettrackerid_hw",
+    "Revision": "",
+    "Description": "An IP generated by Vivado HLS",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": [
+      "..\/hw_functions.cpp",
+      "..\/TrackerPool.cpp",
+      "..\/GaussianTracker.cpp"
+    ],
+    "Vhdl": [
+      "impl\/vhdl\/GaussianP.vhd",
+      "impl\/vhdl\/getTrackerID_hw_AXILiteS_s_axi.vhd",
+      "impl\/vhdl\/getTrackerID_hw_dbkb.vhd",
+      "impl\/vhdl\/getTrackerID_hw_dcud.vhd",
+      "impl\/vhdl\/getTrackerID_hw_ddEe.vhd",
+      "impl\/vhdl\/getTrackerID_hw_deOg.vhd",
+      "impl\/vhdl\/getTrackerID_hw_dg8j.vhd",
+      "impl\/vhdl\/getTrackerID_hw_dhbi.vhd",
+      "impl\/vhdl\/getTrackerID_hw_dpcA.vhd",
+      "impl\/vhdl\/getTrackerID_hw_fibs.vhd",
+      "impl\/vhdl\/getTrackerID_hw_fjbC.vhd",
+      "impl\/vhdl\/getTrackerID_hw_flbW.vhd",
+      "impl\/vhdl\/getTrackerID_hw_fmb6.vhd",
+      "impl\/vhdl\/getTrackerID_hw_fncg.vhd",
+      "impl\/vhdl\/getTrackerID_hw_focq.vhd",
+      "impl\/vhdl\/getTrackerID_hw_sfYi.vhd",
+      "impl\/vhdl\/getTrackerID_hw_skbM.vhd",
+      "impl\/vhdl\/p_hls_fptosi_float_i.vhd",
+      "impl\/vhdl\/getTrackerID_hw.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/GaussianP.v",
+      "impl\/verilog\/getTrackerID_hw_AXILiteS_s_axi.v",
+      "impl\/verilog\/getTrackerID_hw_dbkb.v",
+      "impl\/verilog\/getTrackerID_hw_dcud.v",
+      "impl\/verilog\/getTrackerID_hw_ddEe.v",
+      "impl\/verilog\/getTrackerID_hw_deOg.v",
+      "impl\/verilog\/getTrackerID_hw_dg8j.v",
+      "impl\/verilog\/getTrackerID_hw_dhbi.v",
+      "impl\/verilog\/getTrackerID_hw_dpcA.v",
+      "impl\/verilog\/getTrackerID_hw_fibs.v",
+      "impl\/verilog\/getTrackerID_hw_fjbC.v",
+      "impl\/verilog\/getTrackerID_hw_flbW.v",
+      "impl\/verilog\/getTrackerID_hw_fmb6.v",
+      "impl\/verilog\/getTrackerID_hw_fncg.v",
+      "impl\/verilog\/getTrackerID_hw_focq.v",
+      "impl\/verilog\/getTrackerID_hw_sfYi.v",
+      "impl\/verilog\/getTrackerID_hw_skbM.v",
+      "impl\/verilog\/p_hls_fptosi_float_i.v",
+      "impl\/verilog\/getTrackerID_hw.v"
+    ],
+    "SwDriver": [
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/data\/getTrackerID_hw.mdd",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/data\/getTrackerID_hw.tcl",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/Makefile",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/xgettrackerid_hw.c",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/xgettrackerid_hw.h",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/xgettrackerid_hw_hw.h",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/xgettrackerid_hw_linux.c",
+      "impl\/misc\/drivers\/getTrackerID_hw_v1_0\/src\/xgettrackerid_hw_sinit.c"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/getTrackerID_hw_ap_dadddsub_3_full_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_dcmp_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_ddiv_29_no_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_dexp_16_full_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_dmul_4_max_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_dsqrt_29_no_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_dsub_3_full_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fadd_3_full_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fcmp_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fmul_2_max_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fpext_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fptrunc_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_fsqrt_10_no_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_sitodp_4_no_dsp_32_ip.tcl",
+      "impl\/misc\/getTrackerID_hw_ap_sitofp_4_no_dsp_32_ip.tcl"
+    ],
+    "DesignXml": "C:\/Users\/dstum\/Desktop\/SURG-2020\/SURG-2020-BlobTrackingAccel\/HLS\/getID_hls\/solution1\/.autopilot\/db\/getTrackerID_hw.design.xml",
+    "DebugDir": "C:\/Users\/dstum\/Desktop\/SURG-2020\/SURG-2020-BlobTrackingAccel\/HLS\/getID_hls\/solution1\/.debug",
+    "ProtoInst": ["C:\/Users\/dstum\/Desktop\/SURG-2020\/SURG-2020-BlobTrackingAccel\/HLS\/getID_hls\/solution1\/.debug\/getTrackerID_hw.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": [
+      {
+        "name": "getTrackerID_hw_ap_dadddsub_3_full_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_dadddsub_3_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_dcmp_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name getTrackerID_hw_ap_dcmp_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_ddiv_29_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 29 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_ddiv_29_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_dexp_16_full_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 16 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_dexp_16_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Exponential CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_dmul_4_max_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_dmul_4_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_dsqrt_29_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 29 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_dsqrt_29_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_dsub_3_full_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Subtract CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_dsub_3_full_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fadd_3_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name getTrackerID_hw_ap_fadd_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fcmp_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name getTrackerID_hw_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fmul_2_max_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name getTrackerID_hw_ap_fmul_2_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fpext_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fptrunc_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name getTrackerID_hw_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_fsqrt_10_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 10 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name getTrackerID_hw_ap_fsqrt_10_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_sitodp_4_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name getTrackerID_hw_ap_sitodp_4_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "getTrackerID_hw_ap_sitofp_4_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Custom CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 32 CONFIG.c_a_fraction_width 0 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name getTrackerID_hw_ap_sitofp_4_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Fixed_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      }
+    ]
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "buses": "s_axi_AXILiteS",
+      "reset": "ap_rst_n"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "idle": {"Type": "bool"},
+        "ready": {"Type": "bool"}
+      }
+    },
+    "ap_return": {
+      "type": "data",
+      "dir": "out",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "ap_return",
+      "bundle_role": "default"
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst_n",
+      "bundle_role": "default"
+    },
+    "eventX": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "eventX",
+      "bundle_role": "default"
+    },
+    "eventY": {
+      "type": "data",
+      "dir": "in",
+      "width": "32",
+      "ctype": {"DATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }},
+      "bundle_name": "eventY",
+      "bundle_role": "default"
+    },
+    "maxProb": {
+      "type": "data",
+      "dir": "out",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "64"
+        }},
+      "bundle_name": "maxProb",
+      "bundle_role": "default"
+    },
+    "newFlow_address0": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "newFlow",
+      "bundle_role": "address0"
+    },
+    "newFlow_address1": {
+      "type": "data",
+      "dir": "out",
+      "width": "1",
+      "ctype": {"DATA": {
+          "Type": "null",
+          "Width": "1"
+        }},
+      "bundle_name": "newFlow",
+      "bundle_role": "address1"
+    },
+    "newFlow_q0": {
+      "type": "data",
+      "dir": "in",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "64"
+        }},
+      "bundle_name": "newFlow",
+      "bundle_role": "q0"
+    },
+    "newFlow_q1": {
+      "type": "data",
+      "dir": "in",
+      "width": "64",
+      "ctype": {"DATA": {
+          "Type": "real float",
+          "Width": "64"
+        }},
+      "bundle_name": "newFlow",
+      "bundle_role": "q1"
+    },
+    "s_axi_AXILiteS": {
+      "type": "axi4lite",
+      "is_adaptor": "true",
+      "mode": "slave",
+      "port_prefix": "s_axi_AXILiteS",
+      "param_prefix": "C_S_AXI_AXILITES",
+      "addr_bits": "12",
+      "registers": [],
+      "memories": {
+        "trackerPool_state": {
+          "offset": "16",
+          "range": "16"
+        },
+        "trackerPool_eventCount": {
+          "offset": "64",
+          "range": "64"
+        },
+        "trackerPool_resetTime": {
+          "offset": "128",
+          "range": "64"
+        },
+        "trackerPool_x": {
+          "offset": "256",
+          "range": "128"
+        },
+        "trackerPool_y": {
+          "offset": "384",
+          "range": "128"
+        },
+        "trackerPool_prevX": {
+          "offset": "512",
+          "range": "128"
+        },
+        "trackerPool_prevY": {
+          "offset": "640",
+          "range": "128"
+        },
+        "trackerPool_predX": {
+          "offset": "768",
+          "range": "128"
+        },
+        "trackerPool_predY": {
+          "offset": "896",
+          "range": "128"
+        },
+        "trackerPool_shapeFactor": {
+          "offset": "1024",
+          "range": "128"
+        },
+        "trackerPool_origShapeFactor": {
+          "offset": "1152",
+          "range": "128"
+        },
+        "trackerPool_posFactor": {
+          "offset": "1280",
+          "range": "128"
+        },
+        "trackerPool_velFactor": {
+          "offset": "1408",
+          "range": "128"
+        },
+        "trackerPool_clusterSize": {
+          "offset": "1536",
+          "range": "128"
+        },
+        "trackerPool_smoothingFactor": {
+          "offset": "1664",
+          "range": "128"
+        },
+        "trackerPool_sp1x": {
+          "offset": "1792",
+          "range": "128"
+        },
+        "trackerPool_sp2x": {
+          "offset": "1920",
+          "range": "128"
+        },
+        "trackerPool_sp1y": {
+          "offset": "2048",
+          "range": "128"
+        },
+        "trackerPool_sp2y": {
+          "offset": "2176",
+          "range": "128"
+        },
+        "trackerPool_sigmaX": {
+          "offset": "2304",
+          "range": "128"
+        },
+        "trackerPool_sigmaY": {
+          "offset": "2432",
+          "range": "128"
+        },
+        "trackerPool_sigmaXY": {
+          "offset": "2560",
+          "range": "128"
+        },
+        "trackerPool_a": {
+          "offset": "2688",
+          "range": "128"
+        },
+        "trackerPool_b": {
+          "offset": "2816",
+          "range": "128"
+        },
+        "trackerPool_alpha": {
+          "offset": "2944",
+          "range": "128"
+        },
+        "trackerPool_sumFlowX": {
+          "offset": "3072",
+          "range": "128"
+        },
+        "trackerPool_sumFlowY": {
+          "offset": "3200",
+          "range": "128"
+        },
+        "trackerPool_avgFlowX": {
+          "offset": "3328",
+          "range": "128"
+        },
+        "trackerPool_avgFlowY": {
+          "offset": "3456",
+          "range": "128"
+        },
+        "trackerPool_activity": {
+          "offset": "3584",
+          "range": "128"
+        },
+        "trackerPool_lastTimeStamp": {
+          "offset": "3712",
+          "range": "64"
+        }
+      },
+      "ctype": {
+        "AWVALID": {"Type": "bool"},
+        "AWREADY": {"Type": "bool"},
+        "WVALID": {"Type": "bool"},
+        "WREADY": {"Type": "bool"},
+        "BVALID": {"Type": "bool"},
+        "BREADY": {"Type": "bool"},
+        "BRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARVALID": {"Type": "bool"},
+        "ARREADY": {"Type": "bool"},
+        "RVALID": {"Type": "bool"},
+        "RREADY": {"Type": "bool"},
+        "RRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWADDR": {
+          "Type": "integer unsigned",
+          "Width": "12"
+        },
+        "WDATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        },
+        "WSTRB": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARADDR": {
+          "Type": "integer unsigned",
+          "Width": "12"
+        },
+        "RDATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }
+      },
+      "data_width": "32",
+      "port_width": {
+        "ARADDR": "12",
+        "AWADDR": "12",
+        "RDATA": "32",
+        "WDATA": "32",
+        "WSTRB": "4"
+      }
+    }
+  },
+  "RtlPorts": {
+    "s_axi_AXILiteS_AWVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_AWREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_AWADDR": {
+      "dir": "in",
+      "width": "12"
+    },
+    "s_axi_AXILiteS_WVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_WREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_WDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "s_axi_AXILiteS_WSTRB": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_AXILiteS_ARVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_ARREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_ARADDR": {
+      "dir": "in",
+      "width": "12"
+    },
+    "s_axi_AXILiteS_RVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_RREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_RDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "s_axi_AXILiteS_RRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "s_axi_AXILiteS_BVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_BREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_BRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_return": {
+      "dir": "out",
+      "width": "32"
+    },
+    "eventX": {
+      "dir": "in",
+      "width": "32"
+    },
+    "eventY": {
+      "dir": "in",
+      "width": "32"
+    },
+    "newFlow_address0": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "newFlow_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "newFlow_q0": {
+      "dir": "in",
+      "width": "64"
+    },
+    "newFlow_address1": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "newFlow_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "newFlow_q1": {
+      "dir": "in",
+      "width": "64"
+    },
+    "maxProb": {
+      "dir": "out",
+      "width": "64"
+    },
+    "maxProb_ap_vld": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "getTrackerID_hw",
+      "Instances": [
+        {
+          "ModuleName": "GaussianP",
+          "InstanceName": "grp_GaussianP_fu_4496"
+        },
+        {
+          "ModuleName": "p_hls_fptosi_float_i",
+          "InstanceName": "grp_p_hls_fptosi_float_i_fu_4507"
+        }
+      ]
+    },
+    "Info": {
+      "GaussianP": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "p_hls_fptosi_float_i": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "getTrackerID_hw": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "GaussianP": {
+        "Latency": {
+          "LatencyBest": "115",
+          "LatencyAvg": "115",
+          "LatencyWorst": "115",
+          "PipelineII": "5",
+          "PipelineDepth": "116",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.376"
+        },
+        "Area": {
+          "BRAM_18K": "14",
+          "DSP48E": "62",
+          "FF": "12253",
+          "LUT": "13008",
+          "URAM": "0"
+        }
+      },
+      "p_hls_fptosi_float_i": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "1",
+          "LatencyWorst": "1",
+          "PipelineII": "1",
+          "PipelineDepth": "2",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.303"
+        },
+        "Area": {
+          "FF": "66",
+          "LUT": "467",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "getTrackerID_hw": {
+        "Latency": {
+          "LatencyBest": "571",
+          "LatencyAvg": "571",
+          "LatencyWorst": "571",
+          "PipelineII": "100",
+          "PipelineDepth": "572",
+          "PipelineType": "function"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "10.997"
+        },
+        "Area": {
+          "BRAM_18K": "136",
+          "DSP48E": "81",
+          "FF": "39988",
+          "LUT": "35824",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "getTrackerID_hw",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2020-07-23 19:43:10 -0500",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.1"
+  }
+}

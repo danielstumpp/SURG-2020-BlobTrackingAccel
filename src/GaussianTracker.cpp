@@ -1,4 +1,4 @@
-#include "GaussianTracker.h"
+#include "../include/GaussianTracker.h"
 #include <math.h>
 #include <iostream>
 #include <cmath>

@@ -9,6 +9,10 @@
 #define TRAJ_ROWS POOL_SIZE
 #define TRAJ_COLS 1000
 
+double distance_hw(int eventX, int eventY, double x, double y);
+double GaussianP_hw(int eventX, int eventY,double x, double y, double sigmaX,double sigmaY,double sigmaXY);
+int getTrackerID_hw(GaussianTracker trackerPool[POOL_SIZE], int eventX, int eventY, double newFlow[2], double &maxProb);
+
 //Individual cell of the sensor's view that tracks its own
 //relative activity.
 struct ActivityCell{

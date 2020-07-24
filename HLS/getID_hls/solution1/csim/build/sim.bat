@@ -1,1 +1,1 @@
-    C:/Xilinx/Vivado/2019.2/bin/vivado_hls run_sim.tcl
+    C:/Xilinx/Vivado/2019.1/bin/vivado_hls run_sim.tcl

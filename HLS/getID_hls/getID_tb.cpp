@@ -1,5 +1,6 @@
-/*
-#include "hw_functions.cpp"
+
+#include "TrackerPool.h"
+#include "hw_functions.h"
 #include <iostream>
 
 #define SUCCESS 0
@@ -14,11 +15,11 @@ int main()
 	double newFlow[] = {0,0};
 	double maxProb = 0;
 
-	int id = getTrackerID_hw(trackers.trackerPool, eventX, eventY, newFlow, maxProb)
+	int id = getTrackerID_hw(trackers.trackerPool, eventX, eventY, newFlow, maxProb);
 
 	std::cout<<"ID: "<<id<<"\tProb: "<<maxProb<<std::endl;
 
 	return SUCCESS;
 
 }
-*/
+

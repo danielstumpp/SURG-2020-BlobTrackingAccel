@@ -1,31 +1,200 @@
-INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'dstum' on host 'desktop-k2719b5' (Windows NT_amd64 version 6.2) on Tue Jul 14 10:42:07 -0400 2020
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'dstum' on host 'desktop-k2719b5' (Windows NT_amd64 version 6.2) on Thu Jul 23 19:41:48 -0500 2020
 INFO: [HLS 200-10] In directory 'C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS'
-Sourcing Tcl script 'C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/csim.tcl'
+Sourcing Tcl script 'C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls'.
+INFO: [HLS 200-10] Adding design file 'getID_hls/GaussianTracker.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'getID_hls/TrackerPool.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'getID_hls/hw_functions.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'getID_hls/getID_tb.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../getID_tb.cpp in debug mode
-csim.mk:74: recipe for target 'obj/getID_tb.o' failed
-In file included from ../../../getID_tb.cpp:2:0:
-../../../hw_functions.cpp:1:25: fatal error: TrackerPool.h: No such file or directory
- #include "TrackerPool.h"
-                         ^
-compilation terminated.
-make: *** [obj/getID_tb.o] Error 1
-ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
-INFO: [SIM 211-3] *************** CSIM finish ***************
-4
-    while executing
-"source C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/csim.tcl"
-    invoked from within
-"hls::main C:/Users/dstum/Desktop/SURG-2020/SURG-2020-BlobTrackingAccel/HLS/getID_hls/solution1/csim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/hw_functions.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/TrackerPool.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'getID_hls/GaussianTracker.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 185.188 ; gain = 93.469
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 185.188 ; gain = 93.469
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 360.453 ; gain = 268.734
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'distance_hw' (getID_hls/hw_functions.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'fabs' into 'std::abs' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:94) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::abs' into 'GaussianP' (getID_hls/GaussianTracker.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'distance_hw' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:66) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 427.281 ; gain = 335.563
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'getTrackerID_hw' (getID_hls/hw_functions.cpp:46).
+INFO: [HLS 200-489] Unrolling loop 'mainGTIDloop' (getID_hls/hw_functions.cpp:60) in function 'getTrackerID_hw' completely with a factor of 16.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'distance_hw' (getID_hls/hw_functions.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC2Ed6' into '_ZN9fp_structIdEC1Ed4' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:479) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZN9fp_structIdEC1Ed4' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'generic_copysign<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_copysign<double>' into 'generic_fabs<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_fabs<double>' into 'fabs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/fabsdouble.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'fabs' into 'std::abs' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:94) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::abs' into 'GaussianP' (getID_hls/GaussianTracker.cpp:39) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:15) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:18) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:59) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:51) automatically.
+INFO: [XFORM 203-602] Inlining function 'distance_hw' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:62) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'getTrackerID_hw' (getID_hls/hw_functions.cpp:66) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (getID_hls/hw_functions.cpp:62:16) in function 'getTrackerID_hw'... converting 13 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:32 . Memory (MB): peak = 556.969 ; gain = 465.250
+WARNING: [XFORM 203-631] Renaming function '__hls_fptosi_float_i32' to '__hls_fptosi_float_i' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:15:54)
+INTERNAL-INFO: never seen llvm instruction 'dexp'(522)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 603.867 ; gain = 512.148
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'getTrackerID_hw' ...
+WARNING: [SYN 201-103] Legalizing function name '__hls_fptosi_float_i' to 'p_hls_fptosi_float_i'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'GaussianP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'GaussianP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 5, Final II = 5, Depth = 116.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.591 seconds; current allocated memory: 531.653 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.368 seconds; current allocated memory: 532.263 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_hls_fptosi_float_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function '__hls_fptosi_float_i'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.426 seconds; current allocated memory: 532.399 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.201 seconds; current allocated memory: 532.503 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'getTrackerID_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'getTrackerID_hw'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 100, Final II = 100, Depth = 572.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.671 seconds; current allocated memory: 543.980 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] After resource sharing, estimated clock period (10.9974ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+INFO: [BIND 205-100] The critical path consists of the following:
+	'call' operation ('minDist_2', getID_hls/hw_functions.cpp:90) to '__hls_fptosi_float_i' (11 ns)
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.014 seconds; current allocated memory: 565.156 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'GaussianP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dadddsub_64ns_64ns_64_5_full_dsp_1' to 'getTrackerID_hw_dbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dmul_64ns_64ns_64_6_max_dsp_1' to 'getTrackerID_hw_dcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_ddiv_64ns_64ns_64_31_1' to 'getTrackerID_hw_ddEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dcmp_64ns_64ns_1_2_1' to 'getTrackerID_hw_deOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_sitodp_32ns_64_6_1' to 'getTrackerID_hw_sfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dsqrt_64ns_64ns_64_31_1' to 'getTrackerID_hw_dg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dexp_64ns_64ns_64_18_full_dsp_1' to 'getTrackerID_hw_dhbi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dcud': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_ddEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_deOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dg8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dhbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_sfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'GaussianP'.
+INFO: [HLS 200-111]  Elapsed time: 5.266 seconds; current allocated memory: 567.415 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_hls_fptosi_float_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_hls_fptosi_float_i'.
+INFO: [HLS 200-111]  Elapsed time: 1.148 seconds; current allocated memory: 567.784 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'getTrackerID_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_state' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_eventCount' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_resetTime' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_prevX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_prevY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_predX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_predY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_shapeFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_origShapeFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_posFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_velFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_clusterSize' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_smoothingFactor' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp1x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp2x' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp1y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sp2y' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sigmaXY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_b' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_alpha' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sumFlowX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_sumFlowY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_avgFlowX' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_avgFlowY' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_activity' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/trackerPool_lastTimeStamp' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/eventX' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/eventY' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/newFlow' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'getTrackerID_hw/maxProb' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'getTrackerID_hw' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'trackerPool_state', 'trackerPool_eventCount', 'trackerPool_resetTime', 'trackerPool_x', 'trackerPool_y', 'trackerPool_prevX', 'trackerPool_prevY', 'trackerPool_predX', 'trackerPool_predY', 'trackerPool_shapeFactor', 'trackerPool_origShapeFactor', 'trackerPool_posFactor', 'trackerPool_velFactor', 'trackerPool_clusterSize', 'trackerPool_smoothingFactor', 'trackerPool_sp1x', 'trackerPool_sp2x', 'trackerPool_sp1y', 'trackerPool_sp2y', 'trackerPool_sigmaX', 'trackerPool_sigmaY', 'trackerPool_sigmaXY', 'trackerPool_a', 'trackerPool_b', 'trackerPool_alpha', 'trackerPool_sumFlowX', 'trackerPool_sumFlowY', 'trackerPool_avgFlowX', 'trackerPool_avgFlowY', 'trackerPool_activity' and 'trackerPool_lastTimeStamp' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fadd_32ns_32ns_32_5_full_dsp_1' to 'getTrackerID_hw_fibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fmul_32ns_32ns_32_4_max_dsp_1' to 'getTrackerID_hw_fjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_sitofp_32ns_32_6_1' to 'getTrackerID_hw_skbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fptrunc_64ns_32_2_1' to 'getTrackerID_hw_flbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fpext_32ns_64_2_1' to 'getTrackerID_hw_fmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fcmp_32ns_32ns_1_2_1' to 'getTrackerID_hw_fncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_fsqrt_32ns_32ns_32_12_1' to 'getTrackerID_hw_focq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'getTrackerID_hw_dsub_64ns_64ns_64_5_full_dsp_1' to 'getTrackerID_hw_dpcA' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_deOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_dpcA': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fibs': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fjbC': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_flbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fmb6': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_fncg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_focq': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_sfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'getTrackerID_hw_skbM': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'getTrackerID_hw'.
+INFO: [HLS 200-111]  Elapsed time: 2.176 seconds; current allocated memory: 588.160 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:41 ; elapsed = 00:01:23 . Memory (MB): peak = 737.473 ; gain = 645.754
+INFO: [VHDL 208-304] Generating VHDL RTL for getTrackerID_hw.
+INFO: [VLOG 209-307] Generating Verilog RTL for getTrackerID_hw.
+INFO: [HLS 200-112] Total elapsed time: 83.05 seconds; peak allocated memory: 588.160 MB.

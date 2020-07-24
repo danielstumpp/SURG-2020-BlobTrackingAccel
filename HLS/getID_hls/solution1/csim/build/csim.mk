@@ -1,5 +1,5 @@
 # ==============================================================
-# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+# Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 # ==============================================================
 CSIM_DESIGN = 1
@@ -18,21 +18,21 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../getID_tb.cpp ../../../../../src/GaussianTracker.cpp ../../../../../src/TrackerPool.cpp ../../../hw_functions.cpp
+HLS_SOURCES = ../../../getID_tb.cpp ../../../GaussianTracker.cpp ../../../TrackerPool.cpp ../../../hw_functions.cpp
 
 TARGET := csim.exe
 
-AUTOPILOT_ROOT := C:/Xilinx/Vivado/2019.2
+AUTOPILOT_ROOT := C:/Xilinx/Vivado/2019.1
 AUTOPILOT_MACH := win64
 ifdef AP_GCC_M32
   AUTOPILOT_MACH := Linux_x86
   IFLAG += -m32
 endif
 ifndef AP_GCC_PATH
-  AP_GCC_PATH := C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin
+  AP_GCC_PATH := C:/Xilinx/Vivado/2019.1/msys64/mingw64/bin
 endif
 AUTOPILOT_TOOL := ${AUTOPILOT_ROOT}/${AUTOPILOT_MACH}/tools
-AP_CLANG_PATH := ${AUTOPILOT_ROOT}/tps/win64/msys64/mingw64/bin
+AP_CLANG_PATH := ${AUTOPILOT_ROOT}/msys64/mingw64/bin
 AUTOPILOT_TECH := ${AUTOPILOT_ROOT}/common/technology
 
 
@@ -55,6 +55,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -72,18 +73,18 @@ all: $(TARGET)
 
 $(ObjDir)/getID_tb.o: ../../../getID_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../getID_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/getID_tb.d
 
-$(ObjDir)/GaussianTracker.o: ../../../../../src/GaussianTracker.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../src/GaussianTracker.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/GaussianTracker.o: ../../../GaussianTracker.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../GaussianTracker.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/GaussianTracker.d
 
-$(ObjDir)/TrackerPool.o: ../../../../../src/TrackerPool.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../src/TrackerPool.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/TrackerPool.o: ../../../TrackerPool.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../TrackerPool.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/TrackerPool.d
